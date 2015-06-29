@@ -46,6 +46,6 @@ WORKDIR /usr/local/src
 RUN git clone --depth 2 https://github.com/jeremyjh/dialyxir.git
 WORKDIR /usr/local/src/dialyxir
 RUN mix archive.build
-RUN yes | mix archive.install dialyxir-0.2.6.ez && mix dialyzer.plt
+RUN yes | mix archive.install dialyxir-0.2.7.ez && mix dialyzer.plt
 ########## ELIXIR ##########
 
