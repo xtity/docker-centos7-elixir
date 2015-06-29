@@ -27,13 +27,13 @@ WORKDIR /usr/local/src
 
 RUN yum install -y gcc gcc-c++ make openssl-devel ncurses-devel && yum clean all
 RUN yum install -y epel-release && yum clean all
-RUN yum install -y http://packages.erlang-solutions.com/site/esl/esl-erlang/FLAVOUR_3_general/esl-erlang_17.5-1~centos~7_amd64.rpm && yum clean all
+RUN yum install -y http://packages.erlang-solutions.com/site/esl/esl-erlang/FLAVOUR_3_general/esl-erlang_18.0-1~centos~7_amd64.rpm && yum clean all
 RUN yum install -y sudo wget git tar bzip2 incron vim nodejs npm && yum clean all
 ########## MIDDLEWARE ##########
 
 
 ########## ELIXIR ##########
-ENV ELIXIR_VERSION 1.0.4
+ENV ELIXIR_VERSION 1.0.5
 
 # Build Elixir
 RUN git clone https://github.com/elixir-lang/elixir.git
