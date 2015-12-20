@@ -43,9 +43,9 @@ RUN make clean install
 
 # Build Mix Tasks to use Dialyxir
 WORKDIR /usr/local/src
-RUN git clone --depth 2 https://github.com/jeremyjh/dialyxir.git
+RUN git clone https://github.com/jeremyjh/dialyxir.git
 WORKDIR /usr/local/src/dialyxir
 RUN mix archive.build
-RUN yes | mix archive.build && mix archive.install && mix dialyzer.plt
+RUN yes | mix archive.install && mix dialyzer.plt
 ########## ELIXIR ##########
 
