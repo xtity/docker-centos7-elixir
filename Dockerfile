@@ -33,7 +33,7 @@ RUN yum install -y sudo wget git tar bzip2 incron vim nodejs npm && yum clean al
 
 
 ########## ELIXIR ##########
-ENV ELIXIR_VERSION 1.1.1
+ENV ELIXIR_VERSION 1.3.2
 
 # Build Elixir
 RUN git clone https://github.com/elixir-lang/elixir.git
